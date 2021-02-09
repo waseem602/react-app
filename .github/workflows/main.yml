@@ -40,4 +40,4 @@ jobs:
           
       # Deploy Surge
       - name: Deploying on Surge
-        run: surge ./build waseem602-react-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ waseem602-react-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
