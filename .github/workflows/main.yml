@@ -19,26 +19,25 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Checking out
+        uses: actions/checkout@v2
+        
       # Install NodeJs
-        - name: Installing NodeJs
-          uses: actions/setup-node@v2
-          with:
+      - name: Installing NodeJs
+        uses: actions/setup-node@v2
+        with:
             node-version: 12
 
       # Install Yarn
-        - name: Installing Yarn
-          uses: borales/actions-yarn@v2.0.0
-          with:
+      - name: Installing Yarn
+        uses: borales/actions-yarn@v2.0.0
+        with:
             cmd: install
-
-      # Build React App with Yarn
-        - name: Build React App
-          run: yarn build
           
       # Install Surge
-        - name: Installing Surge
-          run: npm install --global surge
+      - name: Installing Surge
+        run: npm install --global surge
           
       # Deploy Surge
-        - name: Deploying on Surge
-          run: surge ./build waseem602-react-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      - name: Deploying on Surge
+        run: surge ./build waseem602-react-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
