@@ -36,7 +36,7 @@ jobs:
       
       #Build
       - name: Build App
-        run: yarn build
+        run: npm run build
         
       # Install Surge
       - name: Installing Surge
