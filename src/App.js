@@ -10,7 +10,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <h1>
-          This build was by <a href="mailto:wasimarif602@gmail.com">waseem602</a>
+          This build was by <a href="mailto:wasimarif602@gmail.com">waseem602</a> !
         </h1>
         <h2>
           Git Repo: <a href="https://github.com/waseem602/react-app">here.</a>
