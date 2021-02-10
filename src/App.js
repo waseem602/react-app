@@ -13,7 +13,7 @@ function App() {
           This build was by <a href="mailto:wasimarif602@gmail.com">waseem602</a> !
         </h1>
         <h2>
-          Git Repo: <a href="https://github.com/waseem602/react-app">here.</a>
+          Git Repo: <a href="https://github.com/waseem602/react-app">here</a>.
         </h2>
         <a
           className="App-link"
