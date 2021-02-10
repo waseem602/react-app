@@ -35,8 +35,10 @@ jobs:
             cmd: install
       
       #Build
-      - name: Build App
-        run: npm run build
+      - name: chimpwizards-npm-build
+  # You may pin to the exact commit or the version.
+  # uses: chimpwizards-pipeline/npm-build@fad8b0d15e902bd8ed2cb931b3be4bf34b70d3fd
+        uses: chimpwizards-pipeline/npm-build@v1.0.7
         
       # Install Surge
       - name: Installing Surge
